@@ -1,0 +1,2 @@
+rootProject.name = "PhotoCalendar_app1"
+include ':app'
