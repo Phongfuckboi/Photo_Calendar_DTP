@@ -59,4 +59,11 @@ public class fram_adapter extends BaseAdapter {
 
         return holder;
     }
+    private int getImageResForPosition(int position) {
+        Abum_frame fram = list.get(position);
+        int a=fram.getFrame();
+        return  a;
+
+    }
+
 }

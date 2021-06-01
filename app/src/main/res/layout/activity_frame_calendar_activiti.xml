@@ -6,16 +6,24 @@
     android:layout_height="match_parent"
     tools:context=".frame_calendar_activiti"
     android:orientation="vertical"
+    android:id="@+id/linear_pickfame"
     >
     <TextView
+        android:id="@+id/img_tit"
+        android:textSize="25dp"
+        android:padding="10dp"
+        android:text="Select Frame"
+        android:layout_gravity="center"
+        android:gravity="center"
         android:layout_width="match_parent"
         android:layout_height="wrap_content"
-        android:text="Select Frame"
-        android:gravity="center"
-        android:textSize="20dp"
-        android:padding="10dp"/>
+        android:textColor="#B35374"/>
+<!--        android:text="Select Frame"-->
+<!--        android:gravity="center"-->
+
 
         <GridView
+            android:padding="10dp"
             android:id="@+id/grv_frame"
             android:layout_width="match_parent"
             android:layout_height="match_parent"

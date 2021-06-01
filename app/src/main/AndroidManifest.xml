@@ -8,10 +8,11 @@
         android:label="@string/app_name"
         android:roundIcon="@mipmap/ic_launcher_round"
         android:supportsRtl="true"
-        android:theme="@style/Theme.PhotoCalendar_app1">
+        android:theme="@style/Theme.AppCompat.NoActionBar">
         <activity android:name=".export_calendar"></activity>
-        <activity android:name=".frame_calendar_activiti" />
-        <activity android:name=".MainActivity">
+        <activity android:name=".MainActivity" />
+        <activity android:name=".frame_calendar_activiti">
+
             <intent-filter>
                 <action android:name="android.intent.action.MAIN" />
 

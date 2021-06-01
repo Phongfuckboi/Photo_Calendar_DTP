@@ -7,7 +7,7 @@
     <ImageView
         android:id="@+id/img_frame"
         android:layout_width="100dp"
-        android:layout_height="160dp" />
+        android:layout_height="160dp"/>
 
 
 </RelativeLayout>
