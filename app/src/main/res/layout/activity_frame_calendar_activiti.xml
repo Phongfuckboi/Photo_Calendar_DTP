@@ -22,13 +22,12 @@
 <!--        android:gravity="center"-->
 
 
-        <GridView
-            android:padding="10dp"
-            android:id="@+id/grv_frame"
-            android:layout_width="match_parent"
-            android:layout_height="match_parent"
-            android:numColumns="2">
-        </GridView>
+    <GridView
+        android:id="@+id/grv_frame"
+        android:layout_width="match_parent"
+        android:layout_height="match_parent"
+        android:numColumns="3"
+        android:padding="10dp"></GridView>
 
 
 </LinearLayout>

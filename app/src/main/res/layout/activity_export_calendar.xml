@@ -72,7 +72,7 @@
         android:gravity="center"
       >
         <ImageView
-
+            android:id="@+id/img_camara"
             android:src="@drawable/ic_baseline_photo_camera_24"
             android:layout_marginTop="10dp"
             android:layout_width="100dp"
@@ -80,6 +80,7 @@
             android:layout_gravity="center"
             />
         <ImageView
+            android:id="@+id/img_gallerly"
             android:layout_marginLeft="30dp"
             android:layout_gravity="center"
             android:src="@drawable/ic_baseline_folder_shared_24"
