@@ -6,17 +6,42 @@
     android:layout_height="match_parent"
     tools:context=".export_calendar"
     android:orientation="vertical"
-    android:background="#BDC3C1">
+    android:background="#003E5A">
 
-    <androidx.appcompat.widget.Toolbar
+
+    <RelativeLayout
+        android:id="@+id/realtive_save_image"
         android:layout_width="match_parent"
-        android:layout_height="wrap_content"/>
+        android:layout_height="wrap_content"
+        android:padding="10dp">
+        <ImageView
+            android:layout_width="50dp"
+            android:layout_height="50dp"
+            android:id="@+id/img_save"
+            android:src="@drawable/ic_baseline_arrow_downward_24"
+            android:layout_alignParentRight="true"/>
+        <ImageView
+            android:layout_width="50dp"
+            android:layout_height="50dp"
+            android:id="@+id/img_share"
+            android:src="@drawable/ic_baseline_share_24"
+            android:layout_toLeftOf="@+id/img_save"
+            android:layout_marginRight="70dp"
+            android:layout_alignParentRight="true"/>
+        <ImageView
+            android:layout_width="50dp"
+            android:layout_height="50dp"
+            android:id="@+id/img_filter"
+            android:src="@drawable/ic_outline_brush_24"
+            android:layout_alignParentLeft="true"/>
+
+    </RelativeLayout>
 
         <RelativeLayout
             android:id="@+id/real"
             android:layout_width="match_parent"
-            android:layout_height="match_parent"
-            >
+            android:layout_height="match_parent">
+
 
             <com.otaliastudios.zoom.ZoomLayout
                 android:layout_width="match_parent"
@@ -60,35 +85,54 @@
                 android:src="@drawable/a014"
                 android:layout_alignParentLeft="true"/>
 
-
-
-
         </RelativeLayout>
-    <LinearLayout
-        android:layout_width="match_parent"
-        android:layout_height="wrap_content"
-        android:orientation="horizontal"
-        android:layout_marginTop="10dp"
-        android:gravity="center"
-      >
-        <ImageView
-            android:id="@+id/img_camara"
-            android:src="@drawable/ic_baseline_photo_camera_24"
-            android:layout_marginTop="10dp"
-            android:layout_width="100dp"
-            android:layout_height="70dp"
-            android:layout_gravity="center"
-            />
-        <ImageView
-            android:id="@+id/img_gallerly"
-            android:layout_marginLeft="30dp"
-            android:layout_gravity="center"
-            android:src="@drawable/ic_baseline_folder_shared_24"
-            android:layout_marginTop="10dp"
-            android:layout_width="100dp"
-            android:layout_height="70dp"
-            android:layout_alignParentBottom="true"/>
-    </LinearLayout>
+   <LinearLayout
+       android:layout_width="match_parent"
+       android:layout_height="wrap_content"
+       android:orientation="vertical">
+       <LinearLayout
+           android:id="@+id/Linear_storge"
+           android:layout_width="match_parent"
+           android:layout_height="wrap_content"
+           android:orientation="horizontal"
+           android:layout_marginTop="10dp"
+           android:gravity="center"
+           >
+           <ImageView
+               android:id="@+id/img_camara"
+               android:src="@drawable/ic_baseline_photo_camera_24"
+               android:layout_marginTop="10dp"
+               android:layout_width="100dp"
+               android:layout_height="70dp"
+               android:layout_gravity="center"
+               />
+           <ImageView
+               android:id="@+id/img_gallerly"
+               android:layout_marginLeft="30dp"
+               android:layout_gravity="center"
+               android:src="@drawable/ic_baseline_folder_shared_24"
+               android:layout_marginTop="10dp"
+               android:layout_width="100dp"
+               android:layout_height="70dp"
+               android:layout_alignParentBottom="true"/>
+       </LinearLayout>
+       <LinearLayout
+           android:id="@+id/Liner_filter"
+           android:layout_width="wrap_content"
+           android:layout_height="wrap_content"
+           android:orientation="horizontal"
+           >
+           <androidx.recyclerview.widget.RecyclerView
+               android:layout_width="match_parent"
+               android:layout_height="match_parent"
+               android:id="@+id/recyclerView"
+               android:orientation="horizontal"/>
+       </LinearLayout>
+   </LinearLayout>
+
+
+
+
 
 
 </LinearLayout>

@@ -1,4 +1,4 @@
-package com.example.photocalendar_app1.DTO;
+package com.example.photocalendar_app1;
 
 import androidx.appcompat.app.AppCompatActivity;
 
@@ -22,7 +22,7 @@ public class Flash_spreenActivity extends AppCompatActivity {
             catch (Exception e)
             {}
             finally {
-                Intent iDangNhap = new Intent(this, Flash_spreenActivity.class);
+                Intent iDangNhap = new Intent(this, frame_calendar_activiti.class);
                 startActivity(iDangNhap);
                 finish();
             }
